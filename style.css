@@ -1,0 +1,9 @@
+.hide{
+    display: none;
+}
+
+.car {
+    width: 50px;
+    height: 100px;
+    background:transparent url('./8e7cc74222a3f3575ddc551af2889ab3/image/player.png') center / cover no-repeat;
+}
