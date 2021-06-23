@@ -29,13 +29,23 @@ const setting = {
 function startGame(){
     start.classList.add('hide');
     setting.start = true;
+    
     gameArea.appendChild(car);
+    setting.x = car.offsetLeft;
     requestAnimationFrame(playGame);
 }
 
 function playGame(){
     
     if(setting.start === true) {
+        if(keys.ArrowLeft){
+            setting.x--;
+        }
+        if(keys.ArrowRight){
+            setting.x++;
+        }
+        car.style.left = setting.x + 'px';
+
         requestAnimationFrame(playGame);
     }
 
